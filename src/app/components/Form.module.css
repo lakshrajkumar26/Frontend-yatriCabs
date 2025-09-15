@@ -1,17 +1,18 @@
-.formContainer {
+.formContainer { 
   background: #fff;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 12px;
   box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
   max-width: 750px;
   margin: auto;
-  z-index :1;
+  z-index: 1;
 }
 
 .selectionContainer {
   display: flex;
   justify-content: space-between;
-  /* gap: 5rem; */
+  flex-wrap: wrap; /* ✅ allow wrap on small screens */
+  gap: 0.6rem;
   margin-bottom: 1.2rem;
 }
 
@@ -25,10 +26,13 @@
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+  flex: 1; /* ✅ equal width on mobile */
+  min-width: 90px;
+  text-align: center;
 }
 
 .activeTab {
-  background: #2d8a4e; /* green */
+  background: #2d8a4e;
   color: #fff;
 }
 
@@ -44,25 +48,22 @@
 
 .radioButtons {
   display: flex;
-  gap: 5rem;
+  gap: 2rem;
   margin-bottom: 1.5rem;
-  justify-content :center;
-  
-}
-.radioButtons label {
-    display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-right: 20px; 
+  justify-content: center;
+  flex-wrap: wrap; /* ✅ stack if needed */
 }
 
-.radioButtons input[type="radio"]:checked {
-  border-color: green;      /* ✅ green border when selected */
+.radioButtons label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px; 
 }
+
 .radioButtons input[type="radio"] {
   appearance: none;       
   -webkit-appearance: none;
-    border: 2px solid #ccc;   
   -moz-appearance: none;
   width: 18px;
   height: 18px;
@@ -73,7 +74,6 @@
   cursor: pointer;
   margin-right: 8px;
 }
-
 
 .radioButtons input[type="radio"]:checked::before {
   content: "";
@@ -86,7 +86,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .inputFieldsMain {
   display: flex;
@@ -102,6 +101,10 @@
   gap: 1.2rem;
 }
 
+.inputGroup {
+  position: relative; /* ✅ so suggestions align properly */
+}
+
 .inputGroup label {
   font-size: 0.9rem;
   font-weight: 600;
@@ -110,11 +113,10 @@
   display: block;
 }
 
-.inputGroup input,
-.inputGroup select {
+.inputGroup input {
   border: none;
   outline: none;
-  padding: 0.4rem 0;
+  padding: 0.6rem 0.2rem;
   width: 100%;
   font-size: 1rem;
 }
@@ -122,6 +124,33 @@
 .inputGroup hr {
   border: none;
   border-bottom: 1px solid #ccc;
+}
+
+/* ✅ Suggestions Dropdown */
+.suggestions {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 0.3rem;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.suggestions div {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #333;
+  transition: 0.2s;
+}
+
+.suggestions div:hover {
+  background: #f0f0f0;
 }
 
 .submitWrapper {
@@ -137,20 +166,60 @@
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
+  width: 100%; /* ✅ full width on mobile */
 }
 
 .formSubmitButton:hover {
   background: #256f3f;
 }
 
-/* Responsive */
+/* ✅ Responsive */
 @media (max-width: 768px) {
+  .formContainer {
+    padding: 1.5rem;
+  }
+
   .inputFieldsMain {
     flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tabButton {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .radioButtons {
+    gap: 1rem;
+  }
+
+  .formSubmitButton {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .formContainer {
+    padding: 1rem;
+  }
+
+  .tabButton {
+    font-size: 0.8rem;
+    min-width: auto;
+  }
+
+  .radioButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .radioButtons label {
+    margin-bottom: 0.5rem;
   }
 }
 
 .formContainer input::placeholder {
-  color: black;   /* same gray as overlayRight */
-  font-weight: 200; /* match your .plainText style if you want */
+  color: #666;   
+  font-weight: 300;
 }
