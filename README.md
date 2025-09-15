@@ -4,7 +4,8 @@ A modern cab booking web app built with **Next.js 13+, Redux Toolkit, and Mapbox
 This project provides users with a smooth booking flow: selecting pickup & drop locations with autocomplete, choosing a ride, and completing the booking.
 
 ---
-
+Loom Link -  https://www.loom.com/share/d02d0e0e7dde498dbec4942c6a01c5b0
+github link - https://github.com/lakshrajkumar26/Frontend-yatriCabs
 ## ✨ Features
 
 - 🌍 **Mapbox Autocomplete** for pickup & drop location search  
