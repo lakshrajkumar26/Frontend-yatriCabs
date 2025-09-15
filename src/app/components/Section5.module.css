@@ -1,0 +1,54 @@
+.section {
+  margin: 2rem auto;
+   padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #cce0cc;
+  border-radius: 6px;
+}
+
+/* Heading Bar */
+.headingBar {
+  background: #1e4e1e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 6px 6px 0 0;
+  text-align: center;
+}
+
+.headingBar h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Content */
+.contentBox {
+  background: #fafafa;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  text-align: left;
+}
+
+.contentBox ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.contentBox li {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Highlighted Number */
+.highlight {
+  font-weight: 700;
+  color: #1e4e1e;
+}

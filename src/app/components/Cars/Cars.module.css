@@ -1,0 +1,45 @@
+
+/* Ride Selection */
+.rideOptions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.1rem;
+}
+
+.rideCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rideCard:hover {
+  border-color: #00b56a;
+  background: #f1fff8;
+}
+
+.selected {
+  border-color: #00b56a;
+  background: #e6fff3;
+}
+
+.rideInfo {
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+.rideName {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.ridePrice {
+  font-size: 0.8rem;
+  color: #00b56a;
+  font-weight: 500;
+}

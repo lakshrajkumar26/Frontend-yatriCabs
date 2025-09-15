@@ -1,0 +1,22 @@
+.container{
+    width : 100%;
+    height :100%;
+    overflow :hidden;
+   
+}
+
+
+/* BookingPage.module.css or Map.module.css */
+.marker {
+  width: 30px;             /* marker container width */
+  height: 30px;            /* marker container height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;         /* pointer on hover */
+  transition: transform 0.2s ease;
+}
+
+.marker:hover {
+  transform: scale(1.2);   /* grows slightly on hover */
+}

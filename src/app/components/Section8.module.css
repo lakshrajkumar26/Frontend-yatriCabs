@@ -1,0 +1,164 @@
+.wrapper {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonialsSection {
+  background-color: #1b5e20; /* green */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.testimonialCard {
+  background: white;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.stars {
+  color: #1565c0; /* blue for stars */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.testimonialCard p {
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.author {
+  font-weight: 600;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ===== DOWNLOAD SECTION ===== */
+.downloadSection {
+  background: #f7f7f7;
+  padding: 40px 20px;
+}
+
+.downloadContainer {
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+  
+}
+
+.downloadLeft {
+ 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.phoneImage img {
+  max-width: 160px;
+  height: auto;
+}
+
+.downloadText h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.downloadText h3 span {
+  color: #2e7d32; /* green */
+}
+
+.downloadText p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.downloadNow {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.storeButtons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Right side */
+.downloadRight {
+  flex: 1;
+  text-align: left;
+}
+
+.downloadRight h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.downloadRight h3 span {
+  color: #2e7d32;
+}
+
+.downloadRight p {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.downloadBtn {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.downloadBtn:hover {
+  background-color: #1b5e20;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .downloadContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .downloadLeft {
+    flex-direction: column;
+  }
+
+  .downloadRight {
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+.citiesSection {
+  padding: 2rem;
+  text-align: center; 
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.citiesList {
+  display: flex;             /* make children align in a row */
+  flex-wrap: wrap;           /* allows wrapping on small screens */
+  justify-content: center;   /* centers the whole row horizontally */
+  gap: 1.5rem;               /* space between each city */
+}
+
+.citiesList span {
+  font-size: 1rem;
+  white-space: nowrap;       
+}

@@ -1,0 +1,43 @@
+.footer {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.logo {
+  margin-bottom: 15px;
+  display :flex;
+  justify-content :center;
+  align-items :center;
+  padding:30px;
+}
+
+.logo img {
+  width: 200px;    /* adjust width */
+  height: auto;    /* maintains aspect ratio */
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #00ff80; /* Highlight on hover (greenish like your logo) */
+}
+
+.copy {
+  font-size: 13px;
+  padding-top :30px; 
+  color :white;
+}

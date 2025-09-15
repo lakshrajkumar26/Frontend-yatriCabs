@@ -1,0 +1,117 @@
+/* Section wrapper */
+.section {
+    padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+  width:100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+}
+
+/* Heading bar */
+.headingBar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.headingBar h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #333;
+  padding: 0 12px;
+}
+
+/* Outer blue border box containing the 3 cards */
+.contentBox {
+  border: 3px solid #3fb0ff; /* outer blue border like screenshot */
+  border-radius: 6px;
+  padding: 18px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* Flex row of 3 equal cards */
+.cards {
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* Each card */
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center icon and title horizontally */
+  text-align: left;         /* keep paragraph left aligned for readability */
+  padding: 18px;
+  box-sizing: border-box;
+  min-height: 260px;
+  position: relative;
+  background: transparent;
+}
+
+/* dotted vertical separator between columns (appears inside outer border) */
+.card + .card {
+  border-left: 2px dotted rgba(63,176,255,0.65);
+  padding-left: 26px; /* space after dotted line */
+}
+
+/* Icon area (top small icon + main car icon stacked) */
+.iconWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* Title & paragraph */
+.cardTitle {
+  margin: 6px 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #333;
+  text-align: center;
+}
+
+.cardText {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #555;
+}
+
+/* small responsive tweaks */
+@media (max-width: 920px) {
+  .cards {
+    gap: 12px;
+  }
+  .cardTitle {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  /* remove vertical left border when stacked and replace with bottom border */
+  .card + .card {
+    border-left: none;
+    padding-left: 0;
+    border-top: 2px dotted rgba(63,176,255,0.65);
+    padding-top: 20px;
+  }
+
+  .card {
+    min-height: auto;
+  }
+}

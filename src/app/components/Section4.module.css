@@ -1,0 +1,86 @@
+.section {
+  padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+  text-align: center;
+  background: #fff;
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e4e1e;
+  margin-bottom: 2rem;
+}
+
+/* Columns */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* List Boxes */
+.listBox {
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.listBox ul {
+  list-style: disc inside;
+  padding: 0;
+  margin: 0;
+}
+
+.listBox li {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+/* .imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} */
+
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;   /* hides anything overflowing */
+}
+
+/* Video inside */
+.imageBox video {
+  max-width: 100%;   /* fit within container width */
+  max-height: 100%;  /* fit within container height */
+  object-fit: cover; /* crop nicely instead of stretching */
+  border-radius: 8px; /* optional: rounded corners */
+}
+/* Bottom Text */
+.bottomText {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.bottomText h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.bottomText span {
+  color: #2e6b2f;
+  font-weight: 700;
+}

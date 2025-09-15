@@ -1,0 +1,355 @@
+
+.navbar {
+  background-color: ;
+  display: flex;
+  padding: 25px;
+  height: 110px;
+  justify-content: space-between;
+   align-items: center;   
+}
+.rightSection {
+  display: flex;
+  align-items: center;
+  /* background-color :  #38B000; */
+   gap: 20px;
+}
+.profileContainer{
+  display:flex;
+  flex-direction : column;
+  align-items: center;    
+  justify-content: center; 
+  height :100px;
+   gap: 2px;  
+   width:100px;
+   padding :0px;
+   margin:0px;
+   margin: 10px 3px 5px 0;
+   
+ /* gap :5px; */
+}
+.user {
+ background-color: #2d8a4e;
+ height :40px;
+ width : 40px;
+ padding:4px;
+ border-radius :50%;
+}
+.accountText{
+
+}
+.downloadContainer {
+   margin: 10px 3px 5px 0; /* top right bottom left */
+  display:flex;
+   flex-direction : column;
+  justify-content :center;
+  align-items :center;
+}
+
+.phoneIcon{
+    background-color : #A2E682FF;
+    border-radius :50%;
+    height :40px;
+    width :40px;
+    
+}
+.iconText{
+    
+}
+
+
+
+  /* Main container Hero */
+.heroContainer {
+
+  position: relative;
+   height: calc(100vh - 110px); 
+   width :100%;
+   position : relative;
+   z-index:0; 
+   overflow :hidden;
+   
+}
+
+.bgImage {
+  position : relative;
+  z-index:-1; 
+  height: 100%; 
+  width :100%; 
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat; 
+  object-fit: cover; 
+}
+
+.overlay {
+  height :100%;
+  width :80%;
+  z-index:1;
+  display :flex;
+  justify-content :space-between;
+  align-items :center;
+  color :white;
+  position :relative;
+  margin : 0 auto;
+}
+.overlayLeft{
+ flex: 1;
+  display: flex;
+  /* background-color :red; */
+  /* flex-direction: column;    */
+  /* justify-content: center 
+  /* align-items: center;      */
+  text-align: center;       /* center text inside */
+  padding :20px;
+      margin :5px;
+      /* background-color : red; */
+      position : relative;
+      left : -100px;
+}
+
+.overlayLeft h1 {
+
+  font-weight :600;
+  font-size: 4rem;
+    text-align: left;
+      line-height: 1.2;   
+      padding :30px;
+      margin :5px;
+
+
+}
+.leftHighlight {
+   color : #44AF13FF ;
+   
+}
+
+
+
+.overlayRight{
+flex: 1;
+  /* background-color :blue; */
+   padding : 20px;
+   /* border-radius :50%; */
+   flex-direction: column;   
+   justify-content: center;
+   align-items: center;     
+}
+.formContainer {
+   padding :16px 24px;
+   border-radius : 12px;
+
+   gap : 16px;   /*check if needed */
+   margin : 10px ;
+   background: #F1F1F1;
+   height : auto ;
+   width : 80%;
+   min-width: 300px;  /* don’t get too small on mobile */
+   max-width: 700px;   /* don’t get too wide on big screens */
+
+  }
+.selectionContainer{
+   display :flex;
+   justify-content : space-between;
+   /* background-color :gray; */
+   color : green;
+   padding : 0 40px;
+   font-size: 1.5rem;
+   font-weight : 600;
+   margin : 10px 0;
+   /* THis tooo */
+    padding : 10px  30px ;
+    border-radius : 10px;
+
+}
+.selectionContainer :hover { 
+  /* check later */
+  color :white;
+  background-color :#008000 ;
+  padding : 10px  30px ;
+  border-radius : 10px;
+}
+.line {
+  text : black;
+  background-color : #C8C8C8;
+  border :none;
+  height :2px;
+  width: 100%;            
+  margin: 20px 0; 
+}
+.formInput{
+  color : #585858;
+}
+/*   // controlling color of text */
+
+.radioButtons {
+   display :flex;
+   justify-content : center;
+   gap :40px;
+   align-items :center;
+   font-weight :500;
+   
+ 
+}
+.radioButtons input {
+   margin : 5px;
+   margin: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+/* .radioButtons input:hover {
+ border: 2px solid green; 
+border-radius: 50%;  
+
+} */
+
+.inputFieldsMain{
+  padding :20px 0;
+  height:100%;
+  width :100%;
+    gap :25px;
+  /* background-color :red; */
+  display :flex;
+  justify-content :space-evenly;  
+  /* color :##585858; */
+ 
+  /* font-size: 1.2rem; */
+
+}
+.inputFieldsMain label {
+
+  font-size: 1.2rem;
+   font-weight :600;
+    color :##C0C0C0FF;
+}
+.inputFieldsLeft{
+    height:100%;
+  width :100%;
+
+  display :flex;
+  flex-direction :column;
+  /* background-color :red; */
+  /* justify-content :space-evenly; */
+  /* align-items : space-evenly; */
+}
+.inputFieldsRight{
+    height:100%;
+  width :100%;
+
+  display :flex;
+  flex-direction :column;
+  /* background-color :red; */
+  /* justify-content :space-evenly; */
+  /* align-items : space-evenly; */
+}
+.from{
+  display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;
+}
+
+.from input{
+  display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;
+}
+
+
+.pickupDate{
+    display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;
+}
+
+
+.pickupDate input{
+    display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;
+}
+
+
+
+.pickupTime{
+   display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;  display :flex;
+  flex-direction :column;
+}
+.pickupTime input{
+   display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;  display :flex;
+  flex-direction :column;
+}
+
+
+.to{
+     display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;  display :flex;
+  flex-direction :column;
+}
+
+.to input{
+     display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;  display :flex;
+  flex-direction :column;
+}
+
+.returnDate input{
+   display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;  display :flex;
+  flex-direction :column;
+}
+.returnDate{
+     display :flex;
+  flex-direction :column;
+  padding : 10px 5px;
+  width :100%;
+  height :100%;  display :flex;
+  flex-direction :column;
+}
+.formSubmitButton {
+  display: block;           
+  margin: 0 auto;           
+  padding: 20px 40px;
+  background-color: #008000;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.overlayRight { 
+  color : #585858;
+}
+
+.plainText {
+  font-weight :200;
+
+}
+

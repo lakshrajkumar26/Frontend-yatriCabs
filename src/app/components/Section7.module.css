@@ -1,0 +1,60 @@
+.section {
+  width : 100%;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Green title bar */
+.titleBar {
+  background-color: #2e7d32; /* dark green */
+  padding: 14px 20px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titleBar h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Gray box for list */
+.contentBox {
+  background: #f7f7f7;
+  padding: 22px 26px;
+  border-radius: 6px;
+}
+
+/* List styling */
+.contentBox ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.contentBox li {
+  margin-bottom: 16px;
+  line-height: 1.55;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.contentBox li strong {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Small screen tweaks */
+@media (max-width: 768px) {
+  .titleBar h2 {
+    font-size: 1rem;
+  }
+  .contentBox {
+    padding: 18px;
+  }
+}
